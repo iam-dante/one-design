@@ -1,9 +1,12 @@
+import Home from './screens/Home'
+import Service from './screens/Service'
 
 function App() {
   return (
-    <div className="flex flex-row justify-center items-center h-screen">
-      <p>Hello World</p>
-    </div>
+    <>
+      <Home/>
+      <Service/>
+    </>
   );
 }
 
