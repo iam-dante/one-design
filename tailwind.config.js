@@ -8,7 +8,9 @@ module.exports = {
       colors
     },
     fontFamily:{
-      poppins :['"Poppins"', 'san-serif']
+      sans :['"Poppins"', 'sans-serif'],
+      // poppins :['"Poppins"', 'sans-serif'],
+      dancingscript: ['"Dancing Script"', 'curvise']
     }
   },
   variants: {
