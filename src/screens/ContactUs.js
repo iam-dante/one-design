@@ -1,10 +1,10 @@
 const ContactUs =()=>{
     return(
         <div className="h-screen grid grid-flow-row md:grid-cols-7">
-            <div className="md:col-start-1 md:col-end-5  pt-12 md:pt-24 lg:pt-72 pl-12 lg:pl-48">
+            <div className="md:col-start-1 md:col-end-5  pt-40 md:pt-24 lg:pt-72 px-6 md:pl-40">
                 <h1 className=" text-5xl md:text-7xl font-medium">Contact Us</h1>
-                <p className=" w-4/5 md:w-3/5 pt-12">The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a certain letter or only begin and end with certain letters. If you leave these blank, the randomize words that appear will be from the complete list.</p>
-                <div className="flex flex-row space-x-6 w-64 md:w-3/5 justify-center mt-12">
+                <p className=" md:w-3/5 pt-12">The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a certain letter or only begin and end with certain letters. If you leave these blank, the randomize words that appear will be from the complete list.</p>
+                <div className="flex flex-row space-x-6  w-full md:w-3/5 justify-center mt-12">
                     <svg className="w-6 h-6 text-cyan-700 hover:text-blue-700 transition duration-100 ease-in-out" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23 11.5703C23 5.18019 17.8513 0 11.5 0C5.14872 0 0 5.18019 0 11.5703C0 17.3453 4.20536 22.132 9.70312 23V14.9148H6.7832V11.5703H9.70312V9.0212C9.70312 6.1214 11.42 4.51964 14.0468 4.51964C15.3047 4.51964 16.6211 4.74562 16.6211 4.74562V7.593H15.171C13.7425 7.593 13.2969 8.48495 13.2969 9.40085V11.5703H16.4863L15.9765 14.9148H13.2969V23C18.7946 22.132 23 17.3453 23 11.5703"/>
                     </svg>
@@ -24,8 +24,8 @@ const ContactUs =()=>{
 
                 </div>
             </div>
-            <div className="relative md:col-start-5 md:col-end-8 bg-cyan-500">
-                <div className="h-full md:h-36 bg-black absolute inset-x-0 bottom-0 flex justify-center items-center text-white ">
+            <div className="relative md:col-start-5 md:col-end-8 md:bg-cyan-500">
+                <div className="h-full md:h-36 absolute inset-x-0 bottom-0 flex justify-center items-center text-black md:text-white">
                     <h1 >© {new Date().getFullYear()} One Design. All rights reserved</h1>
                 </div>
             </div>
