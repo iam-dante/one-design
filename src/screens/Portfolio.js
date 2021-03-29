@@ -14,7 +14,7 @@ const Portfolio =()=>{
         
                 <h1 className="pb-12 px-6">A high light story on our journey matters, the process that we produced and what we went through enjoy our design.</h1>
                 </div>
-            <div className="w-full min-h-sreen bg-yellow-700 py-10 gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 md:px-10 lg:px-28 ">
+            <div className="w-full min-h-sreen py-10 gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 md:px-10 lg:px-28 ">
                 <div className="w-full bg-black">
                     <img src={img}/>
                 </div>
