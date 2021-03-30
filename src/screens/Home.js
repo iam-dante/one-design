@@ -1,8 +1,26 @@
 import Button from '../components/Button'
-import {useState} from 'react'
+import {useState, useEffect, useRef} from 'react'
+
 
 const Home = () =>{
     const [state, setState] = useState(false)
+    let menu =useRef();
+
+    let handler = (event)=>{
+        if(menu.current && !menu.current.contains(event.target)){
+            setState(false)
+        }
+        
+    }
+
+    useEffect(()=>{
+        document.addEventListener("mousedown", handler)
+
+        return () =>{
+            document.removeEventListener("mousedown", handler)
+        }
+    },)
+   
     return(
         <div className=" min-h-screen ">
 
@@ -18,14 +36,14 @@ const Home = () =>{
                         <Button text="TEAM" link="#team"/>
                         <Button text="CONTACT US"link="#contactus"/> 
                     </div>
-                    <div className="xl:hidden absolute h-12 w-12 rounded-full inset right-12 flex justify-center items-center" onClick={() =>{setState(!state)}}>
+                    <div className="xl:hidden absolute h-10 w-10 inset right-12 flex justify-center items-center" onClick={() =>{setState(true)}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#0E7490">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     </div>
                 </div>
             { state ?
-                <div className=" absolute z-10  h-72 w-3/5 md:w-3/16 bg-gray-200 inset right-12  rounded-lg flex  justify-center flex-col gap-8 pl-12">
+                <div ref={menu} className=" absolute z-10  h-72 w-3/5 md:w-3/16 bg-gray-200 inset right-12  rounded-lg flex  justify-center flex-col gap-8 pl-12">
                     <Button text="HOME" link="#home"/>
                     <Button text="SERVICES" link="#service"/>
                     <Button text="PORTFOLIO" link="#portfolio"/>
@@ -33,6 +51,7 @@ const Home = () =>{
                     <Button text="CONTACT US"link="#contactus"/> 
                 </div> : ""
             }
+        
             </div>
 
 
@@ -55,7 +74,7 @@ const Home = () =>{
                         </div>
                     </div>
                     <div className="inline-flex justify-center items-center">
-                        <div className=" my-12 px-2 rounded-xl shadow-md">
+                        <div className="w-full my-12 mx-2 rounded-xl shadow-md">
                             <img src="https://www.weneedart.com/168-image_zoom_produit/crazy-world.jpg"/>
                         </div>
                     </div>
