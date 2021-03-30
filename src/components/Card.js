@@ -8,7 +8,7 @@ const Card = (props) =>{
                 </div>
             </div>
             <h1 className="text-black group-hover:text-white text-3xl pt-5 px-2 font-poppins md:text-4xl ">{props.title}</h1>
-            <p className="text-xl group-hover:text-white my-12 px-2 text-black  md:text-2xl">{props.categories}</p>
+            <p className="text-xl group-hover:text-white my-12 text-black  md:text-2xl">{props.categories}</p>
         </div>
 
     )

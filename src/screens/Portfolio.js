@@ -4,7 +4,7 @@ const Portfolio =()=>{
     return (
         <div className="min-h-screen">
             <div className="h-auto min-w-full flex justify-center items-center flex-col space-y-5 mx-auto container">
-                <div className="h-16 mt-12 w-auto px-6 md:w-3/6 rounded-full bg-cyan-100 grid grid-flow-col  shadow-md  justify-center gap-3 md:gap-5 lg:gap-24">
+                <div className="h-16 mt-12 px-6 md:px-14 md:w-auto rounded-full bg-cyan-100 grid grid-flow-col  shadow-md  justify-items-center items-center gap-3 md:gap-5 lg:gap-24">
                     <Button text="ALL"/>
                     <Button text="APP"/>
                     <Button text="WEB"/>
