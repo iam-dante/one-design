@@ -7,14 +7,21 @@ import ContactUs from "./screens/ContactUs";
 function App() {
   return (
     <>
-    
-      <Home/>
+      <div id="home">
+        <Home/>
+      </div>
       <div id="service">
         <Service/>
       </div>
-      <Porfolio/>
-      <Team/>
-      <ContactUs/>
+      <div id="portfolio">
+        <Porfolio/>
+      </div>
+      <div id="team">
+        <Team/>
+      </div>
+      <div id="contactus">
+        <ContactUs/>
+      </div>
     </>
   );
 }
