@@ -27,11 +27,11 @@ const Team =()=>{
     ]
     return(
         <div className="min-h-screen w-full bg-cyan-700 grid grid-flow-row lg:grid-cols-2 ">
-                <div className="flex p-12 md:pl-24 md:pt-52 flex-col w-auto ">
+                <div className="flex p-12 md:pl-24 md:pt-80 flex-col w-auto ">
                     <h1 className="text-5xl lg:text-7xl font-medium text-white">OUR TEAM</h1>
                     <p className="text-2xl md:text-3xl pt-24 lg:pt-24 text-white font-thin">We are willing and able to do whatever task is necessary to complete the project.</p> 
                 </div>
-                <div className="grid grid-row gap-6 md:grid-cols-2 lg:mt-18 lg:mr-12 justify-items-center items-center">
+                <div className="grid grid-row gap-6 md:grid-cols-2 lg:mt-18 lg:mr-12 justify-items-center items-center md:pt-40">
                     {
                         teams_data.map(x => (
                             <div className="h-60 w-64  flex flex-col items-center p-2">

@@ -3,7 +3,6 @@ import {useState} from 'react'
 
 const Home = () =>{
     const [state, setState] = useState(false)
-    console.log(state)
     return(
         <div className=" min-h-screen ">
 
@@ -14,17 +13,21 @@ const Home = () =>{
                     </svg>
                     <div className="hidden xl:flex xl:flex-row  xl:space-x-28">
                         <Button text="HOME" link="#home"/>
-                        <Button text="SERVICE" link="#service"/>
+                        <Button text="SERVICES" link="#service"/>
                         <Button text="PORTFOLIO" link="#portfolio"/>
                         <Button text="TEAM" link="#team"/>
                         <Button text="CONTACT US"link="#contactus"/> 
                     </div>
-                    <div className="xl:hidden absolute h-12 w-12 bg-red-400 rounded-full inset right-12" onClick={() =>{setState(!state)}}/>
+                    <div className="xl:hidden absolute h-12 w-12 rounded-full inset right-12 flex justify-center items-center" onClick={() =>{setState(!state)}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#0E7490">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    </div>
                 </div>
             { state ?
-                <div className=" absolute z-10  h-72 w-4/6 bg-amber-400 inset right-12  rounded-lg flex  justify-center flex-col gap-8 pl-12">
+                <div className=" absolute z-10  h-72 w-3/5 md:w-3/16 bg-gray-200 inset right-12  rounded-lg flex  justify-center flex-col gap-8 pl-12">
                     <Button text="HOME" link="#home"/>
-                    <Button text="SERVICE" link="#service"/>
+                    <Button text="SERVICES" link="#service"/>
                     <Button text="PORTFOLIO" link="#portfolio"/>
                     <Button text="TEAM" link="#team"/>
                     <Button text="CONTACT US"link="#contactus"/> 
@@ -33,7 +36,7 @@ const Home = () =>{
             </div>
 
 
-            <div className=" mx-auto container pt-48">
+            <div className=" mx-auto container pt-12 md:pt-32">
                 {/* header information */}
                 <div className="grid grid-flow-row lg:grid-rows-none lg:grid-cols-2 gap-5">
                     <div className="mx-4">
@@ -48,12 +51,12 @@ const Home = () =>{
                             <p className="mt-6 my-24 bg-white">
                             Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses. Even better, it allows you to adjust the parameters of the random words to best fit your needs.
                             </p>
-                            <button className=" bg-white text-cyan-600 border-cyan-600 absolute bottom-0 right-2 font-poppins border-2 hover:bg-cyan-600 hover:text-white h-auto w-auto px-6 py-2 rounded-full font-medium focus:outline-none" >GET STARTED</button>
+                            <a className=" bg-white text-cyan-600 border-cyan-600 absolute bottom-0 right-2 font-poppins border-2 hover:bg-cyan-600 hover:text-white h-auto w-auto px-6 py-2 rounded-full font-medium focus:outline-none" href="#service" >GET STARTED</a>
                         </div>
                     </div>
                     <div className="inline-flex justify-center items-center">
-                        <div className="bg-red-300 h-80 lg:h-full  w-full my-12 md:w-full mx-4 rounded-xl shadow-md ">
-                            {/* <img/> */}
+                        <div className=" my-12 px-2 rounded-xl shadow-md">
+                            <img src="https://www.weneedart.com/168-image_zoom_produit/crazy-world.jpg"/>
                         </div>
                     </div>
                 </div>

@@ -13,9 +13,11 @@ function App() {
       <div id="service">
         <Service/>
       </div>
+
       <div id="portfolio">
         <Porfolio/>
       </div>
+      
       <div id="team">
         <Team/>
       </div>
