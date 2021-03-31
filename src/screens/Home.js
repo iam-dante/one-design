@@ -4,10 +4,10 @@ import {useState, useEffect, useRef} from 'react'
 
 const Home = () =>{
     const [state, setState] = useState(false)
-    let menu =useRef();
+    let menu =useRef(null);
 
     let handler = (event)=>{
-        if(menu.current && !menu.current.contains(event.target)){
+        if(menu.current&& !menu.current.contains(event.target)){
             setState(false)
         }
         
@@ -15,9 +15,8 @@ const Home = () =>{
 
     useEffect(()=>{
         document.addEventListener("mousedown", handler)
-
         return () =>{
-            document.removeEventListener("mousedown", handler)
+        document.removeEventListener("mousedown", handler)
         }
     },)
    
@@ -36,7 +35,7 @@ const Home = () =>{
                         <Button text="TEAM" link="#team"/>
                         <Button text="CONTACT US"link="#contactus"/> 
                     </div>
-                    <div className="xl:hidden absolute h-10 w-10 inset right-12 flex justify-center items-center" onClick={() =>{setState(true)}}>
+                    <div className="xl:hidden absolute h-10 w-10 inset right-12 flex justify-center items-center" onClick={() =>{setState(!state)}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#0E7490">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
