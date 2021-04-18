@@ -74,7 +74,7 @@ const Home = () =>{
                     </div>
                     <div className="inline-flex justify-center items-center">
                         <div className="w-full my-12 mx-2 rounded-xl shadow-md">
-                            <img src="https://www.weneedart.com/168-image_zoom_produit/crazy-world.jpg"/>
+                            <img src="https://www.weneedart.com/168-image_zoom_produit/crazy-world.jpg" alt=""/>
                         </div>
                     </div>
                 </div>
