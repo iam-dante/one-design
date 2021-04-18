@@ -13,9 +13,8 @@
   },
   "scripts": {
     "css": "npx tailwindcss build ./src/tailwindcss/main.css -o ./public/tailwind.css",
-    "prestart": "yarn run css",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
